@@ -1,0 +1,122 @@
+/* 
+ * mods css stylesheet 
+ * created by Francisco Sanchez Arroyo February 2020
+*/
+body {
+	overflow: hidden;
+	font-family: monospace;
+}
+hr {
+	height: 2px;
+        color: #ddd;
+	background-color:#ddd;
+	border-width:0;
+
+}
+button {
+    font-family : inherit;
+    font-size: 1em;
+    padding: 5px 5px !important;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    background-color: #b3b3b3;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 4px #999;
+    margin-bottom: 8px !important;
+}
+
+button:hover {background-color: #7d7d7d;
+	box-shadow: 0 4px #666;
+}
+button:active {
+  background-color: #7d7d7d;
+  box-shadow: 0 4px #666;
+  transform: translateY(3px);
+}
+button:disabled {
+	background-color: #ccc;
+	box-shadow: 0 4px #bbb;
+	cursor: not-allowed;
+}
+input {
+    font-family : inherit;
+    font-size: 1em;
+    border: 1px solid #bbb;
+    padding: 1px;
+    margin: 1px;
+}
+input[type=text]:focus {
+  outline: none;
+  border: 1px solid red;
+}
+
+input[type=radio] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;	
+}
+
+input[type=radio] {
+        margin: 5px;
+	outline: none;
+	position: relative;
+	top: 9px;
+	left: 3px;
+	height: 15px;
+	width: 15px;
+	background-color: #bbb;
+	border: 0px;
+	border-radius: 50%;
+}
+
+input[type=radio]:checked {
+	background-color: #88cc00;
+}
+
+
+
+@-webkit-keyframes marquee {
+    0% {text-indent:100%;}
+    100% {text-indent: -100%}
+}
+
+input.marquee {
+  -webkit-animation: marquee 3s infinite;
+  -webkit-animation-timing-function: linear;
+  }
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    font-family: inherit;
+    font-size: 1em;
+    height: 20px;
+    background-color: #fff;
+    padding: 1px;
+    padding-right: 1.1em;
+    margin: 1px;
+    margin-bottom: 5px;
+    border: 1px solid #bbb;
+    box-shadow: none;
+    /* SVG background image */
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%20viewBox%3D%220%200%2012%2012%22%3E%3Ctitle%3Edown-arrow%3C%2Ftitle%3E%3Cg%20fill%3D%22%23000000%22%3E%3Cpath%20d%3D%22M10.293%2C3.293%2C6%2C7.586%2C1.707%2C3.293A1%2C1%2C0%2C0%2C0%2C.293%2C4.707l5%2C5a1%2C1%2C0%2C0%2C0%2C1.414%2C0l5-5a1%2C1%2C0%2C1%2C0-1.414-1.414Z%22%20fill%3D%22%23000000%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+    background-size: .6em auto, 100%;
+    background-position: right 0.3em top 50%, 0 0;
+    background-repeat: no-repeat;
+    }
+select:hover {
+    border: 1px solid red;
+    }
+
+select:focus {
+    outline: none;
+
+}
+
+select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
